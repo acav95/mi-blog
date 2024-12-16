@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Blog</h1>
+        <p>Un lugar para mis pensamientos y notas.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Pensamientos recientes <span id="thoughtCount" class="count-badge">0</span></h2>
+            <!-- Agregar barra de búsqueda -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Buscar pensamientos..."
+                >
+                <button id="exportButton" class="export-button">
+                    Exportar Pensamientos
+                </button>
+            </div>
+            <!-- Formulario para agregar pensamientos -->
+            <form id="thoughtForm">
+                <div class="form-group">
+                    <input type="text" id="thoughtInput" placeholder="Escribe tu pensamiento aquí" required>
+                    <select id="categorySelect" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Ideas">Ideas</option>
+                        <option value="Reflexiones">Reflexiones</option>
+                        <option value="Lectura">Lectura</option>
+                        <option value="Personal">Personal</option>
+                    </select>
+                    <button type="submit">Agregar</button>
+                </div>
+            </form>
+            <ul>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Sección principal */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #6200ea;
+}
+
+/* Texto */
+p {
+    line-height: 1.6;
+}
+
+/* Lista de pensamientos */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Formulario para agregar pensamientos */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
+
+form button {
+    padding: 10px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4500b5;
+}
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li {
+    animation: fadeIn 0.5s ease-in-out;
+}
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    form input, form button {
+        font-size: 0.9em;
+    }
+
+    li {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#thoughtInput {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#categorySelect {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #5000d3;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 5px 10px;
+    background-color: #6200ea;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.85em;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    background-color: #ff4444;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#searchInput:focus {
+    border-color: #6200ea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.2);
+}
+
+.count-badge {
+    display: inline-block;
+    background-color: #6200ea;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.export-button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: block;
+    width: 100%;
+}
+
+.export-button:hover {
+    background-color: #45a049;
+}
